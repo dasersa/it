@@ -205,7 +205,7 @@
         return Object.prototype.hasOwnProperty.call(t, e)
     }
     ,
-    c.p = "/offbitbonus/",
+    c.p = "/it/offbitbonus/",
     c.oe = function(t) {
         throw console.error(t),
         t
@@ -2269,7 +2269,7 @@
                     usersOnline: 267,
                     usersOnlineTimer: null,
                     d: new Date,
-                    publicPath: "/offbitbonus/",
+                    publicPath: "/it/offbitbonus/",
                     monthShort: new Array("янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","нояб","дек"),
                     reactionsLocal: [],
                     account: {
@@ -3274,8 +3274,8 @@
                 return {
                     searchInput: "",
                     searchBoxClass: "",
-                    publicPath: "/offbitbonus/",
-                    sitename: this.$store.state["/offbitbonus/"].sitename,
+                    publicPath: "/it/offbitbonus/",
+                    sitename: this.$store.state["/it/offbitbonus/"].sitename,
                     d: new Date,
                     month: new Array("янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","нояб","дек"),
                     months: ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
@@ -3735,8 +3735,8 @@
             name: "FooterItem",
             data: function() {
                 return {
-                    publicPath: "/offbitbonus/",
-                    sitename: this.$store.state["/offbitbonus/"].sitename,
+                    publicPath: "/it/offbitbonus/",
+                    sitename: this.$store.state["/it/offbitbonus/"].sitename,
                     socnets: [{
                         nameWrap: "vk",
                         name: "vk",
@@ -3788,7 +3788,7 @@
             data: function() {
                 return {
                     isTestMode: JSON.parse(localStorage.getItem("test")) || !1,
-                    publicPath: "/offbitbonus/",
+                    publicPath: "/it/offbitbonus/",
                     upsells: {
                         ru: D["a"]
                     }
@@ -3823,7 +3823,7 @@
             },
             beforeCreate: function() {
                 var t = this;
-                window.sitename = this.$store.state["/offbitbonus/"].sitename,
+                window.sitename = this.$store.state["/it/offbitbonus/"].sitename,
                 window.getUpsells = function() {
                     return t.upsells.ru
                 }
@@ -3925,7 +3925,7 @@
             data: function() {
                 return {
                     debug: !1,
-                    publicPath: "/offbitbonus/",
+                    publicPath: "/it/offbitbonus/",
                     responseKurs: null,
                     dateNow: (new Date).getTime(),
                     coins: [{
@@ -4491,7 +4491,7 @@
             components: {},
             data: function() {
                 return {
-                    sitename: this.$store.state["/offbitbonus/"].sitename,
+                    sitename: this.$store.state["/it/offbitbonus/"].sitename,
                     d: new Date,
                     monthFull: new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"),
                     faqItems: [{
@@ -4618,7 +4618,7 @@
           , ut = {
             data: function() {
                 return {
-                    publicPath: "/offbitbonus/",
+                    publicPath: "/it/offbitbonus/",
                     reviews: [{
                         name: "Леонид Т.",
                         avatar: "review-2.jpg",
@@ -4746,7 +4746,7 @@
             name: "LandingItem",
             data: function() {
                 return {
-                    publicPath: "/offbitbonus/"
+                    publicPath: "/it/offbitbonus/"
                 }
             },
             components: {
@@ -4799,7 +4799,7 @@
           , jt = s("c0d6")
           , Lt = (s("4917"),
         s("c5f6"),
-        "/offbitbonus/")
+        "/it/offbitbonus/")
           , Tt = "production"
           , zt = function() {
             throw new Error("param is required")
@@ -4906,7 +4906,7 @@
                     t = parseInt(t.toString().replace("&nbsp;", "")),
                     s = "usd" === e ? this.$store.getters.dollar : this.$store.getters.kurs;
                     var a = (t * s).toFixed(2)
-                      , n = this.$store.state["/offbitbonus/"].geo.pre[0].toUpperCase();
+                      , n = this.$store.state["/it/offbitbonus/"].geo.pre[0].toUpperCase();
                     return 1 != s ? " (" + a + "&nbsp;" + n + ")" : ""
                 }
                 ,
@@ -4915,7 +4915,7 @@
                     t = parseInt(t.toString().replace("&nbsp;", "")),
                     s = "usd" === e ? this.$store.getters.dollar : this.$store.getters.kurs;
                     var a = (t * s).toFixed(2)
-                      , n = this.$store.state["/offbitbonus/"].geo.pre[0].toUpperCase();
+                      , n = this.$store.state["/it/offbitbonus/"].geo.pre[0].toUpperCase();
                     return 1 != s ? a + "&nbsp;" + n : ""
                 }
                 ,
@@ -4924,7 +4924,7 @@
                     t = parseInt(t.toString().replace("&nbsp;", "")),
                     s = "usd" === e ? this.$store.getters.dollar : this.$store.getters.kurs;
                     var n = (t * s).toFixed(2)
-                      , i = this.$store.state["/offbitbonus/"].geo.pre[0].toUpperCase();
+                      , i = this.$store.state["/it/offbitbonus/"].geo.pre[0].toUpperCase();
                     return a ? n + "&nbsp;" + i : n
                 }
                 ,
@@ -4950,7 +4950,7 @@
                 }
                 ,
                 t.prototype.$userCurRate = function(t) {
-                    return this.$store.state["/offbitbonus/"].countryStore.curRate
+                    return this.$store.state["/it/offbitbonus/"].countryStore.curRate
                 }
                 ,
                 t.prototype.$numberWithSpaces = function(t, e) {
@@ -5047,7 +5047,7 @@
         s("a481"),
         s("c0d6"))
           , i = s("bc3a")
-          , o = "/offbitbonus/";
+          , o = "/it/offbitbonus/";
         window.epayID = "/b/3974";
         var r = n["a"].state[o]
           , c = n["a"].state[o].address
@@ -5860,7 +5860,7 @@
           , o = s("0e44")
           , r = s("88b4")
           , c = s.n(r)
-          , l = "/offbitbonus/"
+          , l = "/it/offbitbonus/"
           , u = new c.a({
             encodingType: "aes",
             encryptionSecret: l + "!z%C*F-JaNdRgUkX",
@@ -6133,10 +6133,10 @@
                     return t[l].userphone
                 },
                 paymentMethod: function(t, e) {
-                    return localStorage.getItem("/offbitbonus/paymentMethod") ? localStorage.getItem("/offbitbonus/paymentMethod") : t[l].account.paymentMethod
+                    return localStorage.getItem("/it/offbitbonus/paymentMethod") ? localStorage.getItem("/it/offbitbonus/paymentMethod") : t[l].account.paymentMethod
                 },
                 paymentNumber: function(t, e) {
-                    return localStorage.getItem("/offbitbonus/paymentNumber") ? localStorage.getItem("/offbitbonus/paymentNumber") : t[l].account.paymentNumber
+                    return localStorage.getItem("/it/offbitbonus/paymentNumber") ? localStorage.getItem("/it/offbitbonus/paymentNumber") : t[l].account.paymentNumber
                 },
                 getNumberFromMoney: function(t) {
                     return parseInt(t[l].user.money.replace(/ /g, "").replace("&nbsp;", ""))
